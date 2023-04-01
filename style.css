@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+  padding:0;
+  margin:0;
+/*   overflow: hidden; */
+}
+body{
+  background-image: url('https://images.hdqwalls.com/download/astana-mosque-minaret-kazaksthan-1440x2560.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.container div{
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+button{
+  padding: 0.4rem;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(to right, lime,aqua);
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition : color 0.2s ease;
+  margin: 1rem;
+  width: 20rem;
+  align-self: center;
+}
+
+button:hover{
+  opacity : 80%;
+  color: white;
+}
+
+h1{
+  padding: 1rem;
+  background-image: linear-gradient(to left, #ff8585,#f4a4f4);
+  border-radius: 1rem;
+  width: 70vw;
+  backdrop-filter: blur(15px);
+  margin: 0.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  align-self: center;
+}
+label{
+  color: white;
+}
+
+@media screen and (max-width:600px){
+  h1{
+    font-size:1rem;
+  }
+  button{
+     width: 10rem;
+  }
+}
